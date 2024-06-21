@@ -2,109 +2,6 @@ body {
     font-family: "Poppins", sans-serif;
     background-color: black;
 }
-.card {
-    background-color: white;
-    margin: 30px 0;
-
-}
-.card-body {
-    padding: 30px;
-}
-.card-footer {
-    padding: 0 30px 30px;
-}
-.btn {
-    display: block;
-    color: white;
-    font-size: 14px;
-    line-height: 21px;
-    text-align: center;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    padding: 16px;
-    background-color: #462CB3;
-    text-decoration: none;
-
-}
-
-section {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 100px 0;
-}
-section.restaurants {
-    background-color: #f8f8f8;
-}
-.text-center {
-    text-align: center;
-}
-.img-responsive {
-    display: block;
-    width: 320px;
-    height: 250px;
-}
-main {
-    background-color: white;
-}
-main h2 {
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 1.5;
-    margin: 0;
-    color: #272044;
-    
-}
-main h3 {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
-    color: #272044;
-    opacity: 0.5;
-    letter-spacing: 5px;
-    margin: 0;
-}
-main p {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #272044;
-    opacity: 0.7;
-}
-main h4 {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1;
-    color: #272044;
-    margin: 0;
-}
-main h5 {
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 1;
-    color: #272044;
-    margin: 0;
-}
-
-.image-1 {
-    width: 400px;
-    height: 450px;
-}
-.grid-3-columns-footer{
-    display: grid;
-    grid-template-columns: 1fr 2fr 2fr;
-    grid-gap: 64px;
-}
-.grid-2-columns {
-    grid-template-columns: 1fr 1fr;
-    display: grid;
-    grid-gap: 64px;
-}
-.grid-3-columns {
-    grid-template-columns: 1fr 1fr 1fr;
-     display: grid;
-     grid-gap: 30px;
-    
-}
 
 .container {
     max-width: 1200px;
@@ -119,7 +16,6 @@ header {
     color: white;
     text-align: center;
     padding: 200px 0;
-
 }
 
 header h1 {
@@ -134,7 +30,6 @@ header h2 {
     font-size: 40px;
     line-height: 1.5;
     margin: 0;
-    
 }
 
 header h3 {
@@ -160,6 +55,122 @@ header a {
     display: inline-block;
 }
 
+main {
+    background-color: white;
+}
+
+section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+.grid {
+    display: grid;
+    grid-gap: 64px;
+}
+
+.grid-2-columns {
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-columns {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-3-columns-footer {
+    grid-template-columns: 1fr 2fr 2fr;
+}
+
+.image-1 {
+    width: 400px;
+    height: 450px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+main h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.5;
+    margin: 0;
+    color: #272044;
+}
+
+main h3 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #272044;
+    opacity: 0.5;
+    letter-spacing: 5px;
+    margin: 0;
+}
+
+main p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #272044;
+    opacity: 0.7;
+}
+
+main h4 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1;
+    color: #272044;
+    margin: 0;
+}
+
+main h5 {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1;
+    color: #272044;
+    margin: 0;
+}
+
+.restaurants {
+    background-color: #f8f8f8;
+}
+
+.card {
+    background-color: white;
+    margin: 30px 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-body {
+    padding: 30px;
+}
+
+.card-footer {
+    padding: 0 30px 30px;
+}
+
+.btn {
+    display: block;
+    color: white;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding: 16px;
+    background-color: #462CB3;
+    text-decoration: none;
+}
+
+.img-responsive {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
 footer {
     color: white;
     background-image: linear-gradient(rgba(39, 32, 68, 0.9), rgba(0, 0, 0, 0.9)), url(../images/footer-neuburg.jpeg);
@@ -167,6 +178,7 @@ footer {
     background-size: cover;
     padding: 100px 0;
 }
+
 footer h3 {
     font-weight: 700;
     font-size: 20px;
@@ -180,9 +192,11 @@ footer p {
     margin-right: 20px;
     opacity: 0.9;
 }
+
 footer ul {
     padding: 0;
 }
+
 footer li {
     list-style: none;
     margin: 0;
@@ -194,26 +208,29 @@ footer a {
     opacity: 0.7;
 }
 
-
 @media (max-width: 960px) {
     header {
         padding: 60px 0;
     }
+
     header h1 {
         font-size: 48px;
     }
+
     header h2 {
         font-size: 20px;
     }
+
     header h3 {
         font-size: 14px;
     }
+
     .grid {
-        grid-template-columns: 1fr; 
-        grid-gap: 32px
+        grid-template-columns: 1fr;
+        grid-gap: 32px;
     }
+
     section {
         padding: 30px;
     }
-
 }
