@@ -72,6 +72,7 @@ section {
 
 .grid-2-columns {
     grid-template-columns: 1fr 1fr;
+    grid-gap: 0;
 }
 
 .grid-3-columns {
@@ -80,6 +81,11 @@ section {
 
 .grid-3-columns-footer {
     grid-template-columns: 1fr 2fr 2fr;
+}
+.embed {
+  width: 148px;
+  height: 148px;
+  aspect-ratio: 1 /1;
 }
 
 .image-1 {
@@ -166,9 +172,10 @@ main h5 {
 }
 
 .img-responsive {
-    width: 100%;
+    width: 148px;
+    height: 148px;
     display: block;
-    object-fit: cover;
+    
 }
 
 footer {
