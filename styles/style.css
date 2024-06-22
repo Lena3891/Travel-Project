@@ -5,15 +5,13 @@ body {
     margin: 8px;
 }
 
-
 .container {
     max-width: 1400px;
     margin: 0 auto;
 }
 
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)),
-    url("../images/background-neuburg.jpeg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url("../images/background-neuburg.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
@@ -85,17 +83,19 @@ section {
 .grid-3-columns-footer {
     grid-template-columns: 1fr 2fr 2fr;
 }
+
 .embed {
-  width: 100%;
-  aspect-ratio: 1 /1;
+    width: 100%;
+    aspect-ratio: 1 / 1;
 }
+
 .instagram-embeds {
     margin: 30px 0;
 }
 
 .image-1 {
-    width: 400px;
-    height: 450px;
+    width: 100%;
+    height: auto;
 }
 
 .text-center {
@@ -154,9 +154,9 @@ main h5 {
     border-radius: 10px;
     overflow: hidden;
 }
+
 .card-header.grid {
     grid-gap: 0;
-
 }
 
 .card-body {
@@ -187,7 +187,7 @@ main h5 {
 
 footer {
     color: white;
-    background-image: linear-gradient(rgba(39, 32, 68, 0.9), rgba(0, 0, 0, 0.9)), url(../images/footer-neuburg.jpeg);
+    background-image: linear-gradient(rgba(48, 37, 91, 0.8), rgba(0, 0, 0, 0.8)), url(../images/footer-neuburg.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 100px 0;
@@ -222,36 +222,109 @@ footer a {
     opacity: 0.7;
 }
 
+/* Responsive Anpassungen */
 @media (max-width: 960px) {
     header {
         padding: 60px 0;
     }
 
     header h1 {
-        font-size: 40px;
+        font-size: 48px;
     }
 
     header h2 {
-        font-size: 18px;
+        font-size: 24px;
     }
 
     header h3 {
-        font-size: 13px;
+        font-size: 18px;
     }
 
-    .grid {
+    .grid-2-columns {
         grid-template-columns: 1fr;
-        grid-gap: 32px;
+    }
+
+    .grid-3-columns {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-3-columns-footer {
+        grid-template-columns: 1fr;
     }
 
     section {
         padding: 30px;
     }
-    .card-header img{
+
+    .image-1 {
+        width: 100%;
+        height: auto;
+    }
+
+    .card-header img {
         display: none;
     }
+
     .embed {
-        aspect-ratio: 16/9;
+        aspect-ratio: 16 / 9;
     }
-    
 }
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 36px;
+    }
+
+    header h2 {
+        font-size: 20px;
+    }
+
+    header h3 {
+        font-size: 16px;
+    }
+
+    main h2 {
+        font-size: 28px;
+    }
+
+    .grid-3-columns-footer {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 40px 0;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    header h2 {
+        font-size: 16px;
+    }
+
+    header h3 {
+        font-size: 14px;
+    }
+
+    header a {
+        font-size: 12px;
+        padding: 12px 24px;
+    }
+
+    main h2 {
+        font-size: 24px;
+    }
+
+    main h4 {
+        font-size: 20px;
+    }
+
+    .btn {
+        font-size: 12px;
+        padding: 12px;
+    }
+}
+
